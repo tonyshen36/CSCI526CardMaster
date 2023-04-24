@@ -121,7 +121,7 @@ public class CardStack : MonoBehaviour
                 ICard card = cards[0];
                 cards.RemoveAt(0);
                 card.ActiveCard();
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
             }
         }
         executing = false;

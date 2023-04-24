@@ -1,6 +1,10 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -20,7 +24,12 @@ public class TutorialManager : MonoBehaviour
     public GameObject go8;
     public GameObject go9;
     public GameObject go10;
-
+    public GameObject redrawbutton;
+    public GameObject pausebutton;
+    public GameObject remainbutton;
+    private Tween tween1;
+    private Tween tween2;
+    private Tween tween3;
 
     // Start is called before the first frame update
     void Start()
@@ -35,11 +44,17 @@ public class TutorialManager : MonoBehaviour
         go8.SetActive(false);
         go9.SetActive(false);
         go10.SetActive(false);
+        tween1 = redrawbutton.GetComponent<Outline>().DOFade(1, .5f).SetLoops(-1, LoopType.Yoyo);
+        tween2 = remainbutton.GetComponent<Outline>().DOFade(1, .5f).SetLoops(-1, LoopType.Yoyo); 
     } 
 
     void Update()
     {
         if(PlayerController.instance.isMovingRight == true){
+            tween1.Kill();
+            tween2.Kill();
+            redrawbutton.GetComponent<Outline>().DOFade(0, .01f);
+            remainbutton.GetComponent<Outline>().DOFade(0, .01f);
             go1.SetActive(false);
             go12.SetActive(false);
             go13.SetActive(false);
@@ -140,6 +155,7 @@ public class TutorialManager : MonoBehaviour
             go8.SetActive(true);
         }
         if(hintpoint5.instance.check == true){
+            tween3 = pausebutton.GetComponent<Outline>().DOFade(1, .5f).SetLoops(-1, LoopType.Yoyo);            
             go1.SetActive(false);
             go12.SetActive(false);
             go13.SetActive(false);

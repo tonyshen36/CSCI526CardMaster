@@ -844,6 +844,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4245945435857564282, guid: 585e1126f4bd2464ca4f95e1f3695f16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 88.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245945435857564282, guid: 585e1126f4bd2464ca4f95e1f3695f16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 85.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245945435857564282, guid: 585e1126f4bd2464ca4f95e1f3695f16, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.0170288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245945435857564282, guid: 585e1126f4bd2464ca4f95e1f3695f16, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.724976
+      objectReference: {fileID: 0}
     - target: {fileID: 5202390098319587660, guid: 585e1126f4bd2464ca4f95e1f3695f16, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.000030517578
@@ -1689,6 +1705,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 10.160713}
   m_EdgeRadius: 0
+--- !u!1 &421120233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6849836001222726045, guid: 58afb289f0738e04e802a725b158d202, type: 3}
+  m_PrefabInstance: {fileID: 24664261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &421120238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421120233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0.16470589, b: 1, a: 0}
+  m_EffectDistance: {x: 8, y: -8}
+  m_UseGraphicAlpha: 1
 --- !u!1 &445394544
 GameObject:
   m_ObjectHideFlags: 0
@@ -12439,6 +12475,9 @@ MonoBehaviour:
   go8: {fileID: 844363316}
   go9: {fileID: 1942852661}
   go10: {fileID: 1663006253}
+  redrawbutton: {fileID: 421120233}
+  pausebutton: {fileID: 1765329703}
+  remainbutton: {fileID: 1023032649}
 --- !u!4 &929112379
 Transform:
   m_ObjectHideFlags: 0
@@ -13103,6 +13142,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfCards: 5
+--- !u!1 &1023032649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8066131598509845327, guid: 5f81b39fa16acba4a908002700e3bd80, type: 3}
+  m_PrefabInstance: {fileID: 932438613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1023032655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023032649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0.16470589, b: 1, a: 0}
+  m_EffectDistance: {x: 8, y: -8}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1029625481
 GameObject:
   m_ObjectHideFlags: 0
@@ -16638,6 +16697,26 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7942463468763228789, guid: 58afb289f0738e04e802a725b158d202, type: 3}
   m_PrefabInstance: {fileID: 24664261}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1765329703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4245945435857564283, guid: 585e1126f4bd2464ca4f95e1f3695f16, type: 3}
+  m_PrefabInstance: {fileID: 118485383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1765329709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765329703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0.16470589, b: 1, a: 0}
+  m_EffectDistance: {x: 8, y: -8}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1834881666
 GameObject:
   m_ObjectHideFlags: 0
